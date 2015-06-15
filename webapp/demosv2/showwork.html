@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>查看作业</title>
+<link rel="stylesheet" style="text/css" href="../themes/defaults/images/wbd/main.css"/>
+<script type="text/javascript" src="../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../js/borad_1.0.support.js"></script>
+<link rel="stylesheet" href="../themes/defaults/jquery-ui-1.8.defaults.min.css">
+<script type="text/javascript" src="../js/jquery-ui-1.8.17.custom.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	var show = new $BoardShow({
+			mainId:"maindiv",
+			toolbarId:"toolbar",
+			toolbars:["delay"],
+			canvasId:"maincanvas"
+			});
+	
+	show.show();
+	
+});
+</script>
+
+	<script type="text/javascript">
+		/* 	$(function(){
+				 var slider = $("#slider");
+				slider.slider();
+				slider.slider({
+					max : 20
+				});
+				slider.slider({
+					value : 0
+				});
+				//slider.slider({ step: 1000 });
+				slider.slider({
+					slide : function(event, ui) {
+						console.log(ui.value);
+						globalBar.interrupt();
+						globalBar = new bar();
+						globalBar.create(ui.value)();
+					}
+				});
+				
+				var globalBar = null;
+				
+				var bar = function(){
+					var interrupt = false;
+					return {
+						"create":function(val){
+							return function(){
+								if(interrupt){
+									return;
+								}
+								moveSlider(val);
+								if(val > slider.slider( "option", "max" )){
+									return;
+								}
+								console.log(val);
+								var s2 = setTimeout(globalBar.create(++val),1000);
+								console.log(s2,"s2");
+							}
+						},
+						"interrupt":function(){
+							interrupt = true;
+						},
+						"resume":function(){
+							interrupt = false;
+						}
+					};
+				} 
+				
+				var moveSlider = function(val){
+					slider.slider({value:val});
+				}
+				
+				globalBar = new bar();
+				
+				globalBar.create(0)();
+				
+			}); */
+		</script>
+</head>
+<body>
+	<div id="maindiv">
+		
+	</div>
+	<div id="slider"></div>
+</body>
+</html>

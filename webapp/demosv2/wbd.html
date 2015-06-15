@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>canvas画图</title>
+<link rel="stylesheet" style="text/css" href="../themes/defaults/images/wbd/main.css"/>
+<script type="text/javascript" src="../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../js/borad_1.0.support.js"></script>
+<script>
+	$(function(){
+		var a = new $BoardDraw({
+				mainId:"maindiv",
+				toolbarId:"toolbar",
+				toolbars:["eraser","undo","delay","undoall"],
+				colors:["yellow","green","blue","red","gray","black"],
+				canvasId:"maincanvas",
+				userList:"userList"
+				});
+		var ws = new $WebSocket();
+		
+		a.init(ws);
+		ws.createWebSocket(a);
+		
+	});
+</script>
+</head>
+<body>
+	<div id="maindiv">
+		
+	</div>
+	
+	<div id="userList">
+	</div>
+</body>
+</html>
