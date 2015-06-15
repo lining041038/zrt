@@ -1,0 +1,2 @@
+1. solr启动之前需要在vm参数中添加如下配置
+    -Dsolr.solr.home=D:\workspace\antelope\doc\solr\solr

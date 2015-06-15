@@ -1,0 +1,10 @@
+1.将weblogic安装到D:\Oracle\Middleware1035
+2.将commEnv.cmd覆盖粘贴到安装目录 D:\Oracle\Middleware1035\wlserver_10.3\common\bin中
+3.将setDomainEnv.cmd覆盖粘贴到新建的用户域目录  D:\Oracle\Middleware1035\user_projects\domains\base_domain\bin中
+
+4.当使用sqlserver数据源时，需要将项目当中的sqljdbc4.jar包拷贝到D:\Oracle\Middleware1035\wlserver_10.3\server\lib目录中，
+  然后将commEnv.cmd中的
+  set WEBLOGIC_CLASSPATH=%JAVA_HOME%\lib\tools.jar;%WL_HOME%\server\lib\weblogic_sp.jar;%WL_HOME%\server\lib\weblogic.jar;%FEATURES_DIR%\weblogic.server.modules_10.3.5.0.jar;%WL_HOME%\server\lib\webservices.jar;%ANT_HOME%/lib/ant-all.jar;%ANT_CONTRIB%/lib/ant-contrib.jar
+  此行代码修改为
+  set WEBLOGIC_CLASSPATH=%JAVA_HOME%\lib\tools.jar;%WL_HOME%\server\lib\weblogic_sp.jar;%WL_HOME%\server\lib\sqljdbc4.jar;%WL_HOME%\server\lib\weblogic.jar;%FEATURES_DIR%\weblogic.server.modules_10.3.5.0.jar;%WL_HOME%\server\lib\webservices.jar;%ANT_HOME%/lib/ant-all.jar;%ANT_CONTRIB%/lib/ant-contrib.jar
+  其实就是添加一个引用sqljdbc4.jar的CLASSPATH路径

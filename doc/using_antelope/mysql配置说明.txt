@@ -1,0 +1,8 @@
+
+
+#安装完成后需要在my.ini配置文件中添加
+
+max_allowed_packet = 16M
+group_concat_max_len = 102400
+
+#两项配置
