@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<serviceGroup>
+	<!-- WebServiceDemo -->
+	<service name="WebServiceDemo">
+		<parameter name="ServiceClass">
+			antelope.demos.WebServiceDemo
+		</parameter>
+		<operation name="testWebService">
+			<messageReceiver class="org.apache.axis2.rpc.receivers.RPCMessageReceiver" />
+		</operation>
+	</service>
+</serviceGroup>
