@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="dbdeploy" default="test_all_sql_correct">
+
+    <property name="db.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver" />
+    <property name="db.url" value="jdbc:sqlserver://localhost:1433;databaseName=databasetotest" />
+	<property name="db.totesturl" value="jdbc:sqlserver://localhost:1433;databaseName=master" />
+	<property name="db.userid" value="sa" />
+	<property name="db.password" value="sa" />
+
+    <path id="mssql.classpath">
+        <fileset dir="../../../lib">
+            <include name="sqljdbc4.jar"/>
+        </fileset>
+    </path>
+
+    <path id="dbdeploy.classpath">
+        <!-- include the dbdeploy-ant jar -->
+        <fileset dir="../../../lib">
+            <include name="dbdeploy-ant-*.jar"/>
+        </fileset>
+
+        <!-- the dbdeploy task also needs the database driver jar on the classpath -->
+        <path refid="mssql.classpath" />
+
+    </path>
+
+    <taskdef name="dbdeploy" classname="antelope.dbdeploy.AntTarget" classpathref="dbdeploy.classpath"/>
+
+    <target name="default">
+        <dbdeploy driver="${db.driver}"
+          dir="." changelogtablename="changelog"
+        />
+	</target>
+	
+	<!--testsqlcorrect-->
+	<target name="creattestsqldatabase">
+		<sql driver="${db.driver}" url="${db.totesturl}"
+	         userid="${db.userid}" password="${db.password}" classpathref="mssql.classpath">
+	       <fileset file="dropTestDatabase.sql"></fileset>
+	    </sql>
+		<sql driver="${db.driver}" url="${db.totesturl}"
+	         userid="${db.userid}" password="${db.password}" classpathref="mssql.classpath">
+	       <fileset file="createTestDatabase.sql"></fileset>
+	    </sql>
+	</target>
+	<target name="droptestsqldatabase">
+		<sql driver="${db.driver}" url="${db.totesturl}"
+	         userid="${db.userid}" password="${db.password}" classpathref="mssql.classpath">
+	       <fileset file="dropTestDatabase.sql"></fileset>
+	    </sql>
+	</target>
+	<target name="test_all_sql_correct" depends="creattestsqldatabase">
+		<antcall target="default"></antcall>
+		<antcall target="droptestsqldatabase"></antcall>
+	</target>
+</project>

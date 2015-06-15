@@ -1,0 +1,1 @@
+select count(*) ct from sysobjects where id = object_id('bapchangelog');

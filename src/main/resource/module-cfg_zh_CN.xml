@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module-cfg>
+	<menu id="1319810775039" title="系统管理">
+		<menu id="1319810775040" title="系统参数管理">
+			<menu id="1319810775041" title="角色管理" path="/system/userAndRoleManage.jsp" />
+			<menu id="1319810775141" title="纯角色权限管理" path="/system/role_managev2.jsp" />
+			<menu id="1319810776141" title="用户管理" path="/system/usermanage/usermanage.jsp" />
+			<menu id="1319810775042" title="组织机构管理" path="/system/organizationManage.jsp" />
+			<menu id="1319810775142" title="系统选项管理" path="/system/sysoptsManage.jsp" />
+			<menu id="1329810775042" title="多单位统一领导管理" path="/system/multiOrgLeaderManage.jsp" />
+			<menu id="1319810775043" title="地图机构关系管理" path="/system/datamapunitManage.jsp" />
+			<menu id="1319810775443" title="系统数据迁移" path="/system/oldDataMigration.jsp" />
+			<menu id="1379810775443" title="Task调度台" path="/system/quartz/taskManageConsole.jsp" />
+			<menu id="1379810776443" title="日志管理" path="/system/logmanage/logmanage.jsp" />
+		</menu>
+		<menu id="1328810775040" title="大数据">
+			<menu id="1328910775040" title="hadoop文件管理" path="/system/hadoop/hadoopfilemanage.jsp"/>
+		</menu>
+		<menu id="1318810775040" title="我的邮箱">
+			<menu id="1318811775041" title="我的邮箱" path="/system/mail/receivedmails.jsp"/>
+		</menu>
+	</menu>
+	<menu id="1319810775052" title="Demo 演示">
+		<menu id="131981075321" title="底层基础组件">
+			<menu id="139981075321" title="tree" path="/demos/tree.jsp" noneedlogin="true"/>
+			<menu id="1319810775054" title="datagrid" path="/demos/datagrid.jsp" noneedlogin="true"/>
+			<menu id="1319810775354" title="tilegrid" path="/demos/tilegrid.jsp" noneedlogin="true"/>
+			<menu id="1319810775554" title="guestbook" path="/demos/guestbook.jsp" noneedlogin="true"/>
+			<menu id="1319810775154" title="datagrid_editable" path="/demos/datagrid_editable.jsp"/>
+			<menu id="1359810775054" title="viewnavigatordemo" path="/demos/view_navigatordemo.jsp"/>
+			<menu id="1319810775055" title="fileupload" path="/demos/fileupload.jsp"/>
+			<menu id="1319810775055" title="fileupload断点续传" path="/demos/fileuploadresume.jsp"/>
+			<menu id="1319810785055" title="freemarker" path="/demos/freemarker.jsp"/>
+			<menu id="1319810775155" title="formula_editor" path="/demos/formulaeditordemo.jsp"/>
+			<menu id="1339810775055" title="ckeditor4" path="/demos/ckeditor4demo.jsp"/>
+			<menu id="1349810775055" title="combobox" path="/demos/combobox.jsp"/>
+			<menu id="1359810775055" title="menubar" path="/demos/menubar.jsp"/>
+			<menu id="1359810775055" title="antelopePlayer" path="/demos/antelopePlayerDemo.jsp"/>
+			<menu id="1359810775055" title="flexpaper" path="/demos/antelopeflexpaper.jsp"/>
+			<menu id="1359810775055" title="html5hlsPlayer" path="/demos/hlshtml5videotest.jsp"/>
+			<menu id="1369810775055" title="flashslider" path="/demos/flashslider.jsp"/>
+			<menu id="1369810775155" title="wordexport" path="/demos/wordexport.jsp"/>
+			<menu id="1369810775355" title="在线支付" path="/demos/pay_datagrid.jsp"/>
+		</menu>
+		<menu id="1319810775858" title="选择控件">
+			<menu id="1319810775056" title="userselect" path="/demos/userselect.jsp"/>
+			<menu id="1319810775156" title="selectByList" path="/demos/listselectdemo.jsp"/>
+			<menu id="1929810775158" title="selectByTile" path="/demos/tileselectdemo.jsp"/>
+			<menu id="1319810775157" title="selectByTree" path="/demos/treeselectdemo.jsp"/>
+			<menu id="1339810775157" title="selectByTreeList" path="/demos/treelistselectdemo.jsp"/>
+			<menu id="1349810775157" title="selectByTreesList" path="/demos/treeslistselectdemo.jsp"/>
+			<menu id="1359810775157" title="selectByTrees" path="/demos/treesselectdemo.jsp"/>
+		</menu>
+		<menu id="1359810775158" title="表单验证">
+			<menu id="1351810775158" title="validate" path="/demos/validate.jsp"/>
+		</menu>
+		<menu id="1359810775258" title="日期时间选择">
+			<menu id="1351810775258" title="datetime" path="/demos/datetime.jsp"/>
+		</menu>
+		<menu id="1349810775158" title="图表组件">
+			<menu id="1341810775158" title="flashchart" path="/demos/flashchartexample.jsp"/>
+			<menu id="1341810775258" title="sparklinechart" path="/demos/flashchartsparkline.jsp"/>
+			<menu id="1341810775158" title="fusionchart" path="/demos/fusionchartexample.jsp"/>
+		</menu>
+		<menu id="1339810775158" title="数据地图组件">
+			<menu id="1331810775158" title="loadDataMap" path="/demos/datamap.jsp"/>
+		</menu>
+		<menu id="1369810775158" title="工作流组件">
+			<menu id="1361810775158" title="workflow_datagrids" path="/demos/workflow_datagrids_demo.jsp"/>
+		</menu>
+		<menu id="1329810775158" title="全界面组件">
+			<menu id="1320810775158" title="single_datagrid" path="/demos/single_datagrid.jsp"/>
+			<menu id="1320810775558" title="multiple_datagrids" path="/demos/multiple_datagridsdemo.jsp"/>
+			<menu id="1320810775358" title="自定义表单单表" path="/demos/selfform_datagrid.jsp"/>
+			<menu id="1321810775158" title="tree_datagrid" path="/demos/tree_datagrid.jsp"/>
+			<menu id="1321810775158" title="tree_tilegrid" path="/demos/tree_tilegriddemo.jsp"/>
+			<menu id="1321810775258" title="multipletreedatagrid" path="/demos/multiple_trees_datagriddemo.jsp"/>
+			<menu id="1320810775258" title="stats_chartgrid" path="/demos/statschartgriddemo.jsp"/>
+			<menu id="1320810775458" title="stats_fusionchart" path="/demos/statsfusionchartdemo.jsp"/>
+		</menu>
+		<menu id="1529810775158" title="网站前台">
+			<menu id="1520810775158" title="空白界面" path="/demos/lightweightwebpage.jsp" target="_blank"/>
+			<menu id="1521810775158" title="企业网界面" path="/demos/webpagezzcpdemo.jsp" target="_blank"/>
+		</menu>
+		<menu id="1449810775158" title="AMS音视频">
+			<menu id="1449110175158" title="livesend" path="/demos/amscomplivesend.jsp" target="_blank"/>
+			<menu id="1449110275158" title="livereceive" path="/demos/amscomplivereceive.jsp" target="_blank"/>
+			<menu id="1449110375158" title="recordsend" path="/demos/amscomprecordsend.jsp" target="_blank"/>
+			<menu id="1449110475158" title="recordreceive" path="/demos/amscomprecordreceive.jsp" target="_blank"/>
+			<menu id="1449110575158" title="videochathost" path="/demos/amscompvideochathost.jsp" target="_blank"/>
+			<menu id="1449110675158" title="videochatguest" path="/demos/amscompvideochatguest.jsp" target="_blank"/>
+		</menu>
+		<menu id="1429810775258" title="完整功能">
+			<menu id="1420810775158" title="AMS组播直播发送端" path="/modules/amsmulticastlive.jsp"/>
+			<menu id="1420810775258" title="AMS组播直播观看端" path="/modules/amsmulticastlivereceiver.jsp" target="_blank"/>
+			<menu id="1420810775458" title="AMS单播直播观看端" path="/modules/amsmulticastlivesinglereceiver.jsp" target="_blank"/>
+			<menu id="1420810775358" title="AMS组播录播发送端" path="/modules/amsmulticastrecord.jsp"/>
+			<menu id="1420810775458" title="AMS组播录播观看端" path="/modules/amsmulticastrecordreceiver.jsp" target="_blank"/>
+			<menu id="1420810775458" title="AMS单播录播观看端" path="/modules/amsmulticastrecordsinglereceiver.jsp" target="_blank"/>
+		</menu>
+		<menu id="1424810574558" title="白板交互">
+			<menu id="14248105745581" title="简单白板" path="demos/wbd.jsp" target="_blank"/>
+		</menu>
+	</menu>
+	
+	<menu id="1319810775052" title="DemoV2 演示">
+		<menu id="1329811775158" title="全界面组件">
+			<menu id="1350810775158" title="single_datagrid" path="/demosv2/single_datagrid.jsp"/>
+			<menu id="1360810775558" title="multiple_datagrids" path="/demosv2/multiple_datagridsdemo.jsp"/>
+			<menu id="1370810775358" title="自定义表单单表" path="/demosv2/selfform_datagrid.jsp"/>
+			<menu id="1381810775158" title="tree_datagrid" path="/demosv2/tree_datagrid.jsp"/>
+			<menu id="1391810775158" title="tree_tilegrid" path="/demosv2/tree_tilegriddemo.jsp"/>
+			<menu id="1101810775258" title="multipletreedatagrid" path="/demosv2/multiple_trees_datagriddemo.jsp"/>
+			<menu id="1110810775258" title="stats_chartgrid" path="/demosv2/statschartgriddemo.jsp"/>
+			<menu id="1120810775458" title="stats_fusionchart" path="/demosv2/statsfusionchartdemo.jsp"/>
+		</menu>
+		<menu id="1319810775858" title="选择控件">
+			<menu id="1319810775056" title="userselect" path="/demosv2/userselect.jsp"/>
+			<menu id="1319810775156" title="selectByList" path="/demosv2/listselectdemo.jsp"/>
+			<menu id="1929810775158" title="selectByTile" path="/demosv2/tileselectdemo.jsp"/>
+			<menu id="1319810775157" title="selectByTree" path="/demosv2/treeselectdemo.jsp"/>
+			<menu id="1339810775157" title="selectByTreeList" path="/demosv2/treelistselectdemo.jsp"/>
+			<menu id="1349810775157" title="selectByTreesList" path="/demosv2/treeslistselectdemo.jsp"/>
+			<menu id="1359810775157" title="selectByTrees" path="/demosv2/treesselectdemo.jsp"/>
+		</menu>
+		<menu id="1369810775158" title="工作流组件">
+			<menu id="1361810775158" title="workflow_datagrids" path="/demosv2/workflow_datagrids_demo.jsp"/>
+		</menu>
+	</menu>
+	
+	<menu id="1339810775052" title="网站内容管理 测试一下过长的菜单一下长长长长长长长长长长长长长">
+		<menu id="1339810775155" title="网站内容管理">
+			<menu id="1331810775155" title="站点和页面" path="/wcm/management/sitemanage.jsp"/>
+		<!-- <menu id="1351810775155" title="资源管理" path="/wcm/management/assetsmanage.jsp"/> -->
+		<!-- <menu id="1352810775155" title="站点发布" path="/wcm/management/sitepublishmanage.jsp"/>  -->
+			<menu id="1539811775155" title="文章管理" path="/wcm/article/articlemanage.jsp"/>
+			<menu id="1539812775155" title="产品管理" path="/wcm/product/productmanage.jsp"/>
+		<!-- <menu id="1569812775155" title="公告管理" path="/wcm/announcement/announcementmanage.jsp"/> -->
+			<menu id="1559812775155" title="留言管理" path="/wcm/peoplemsg/peoplemsgmanage.jsp"/>
+		</menu>
+		
+	</menu>
+	<menu id="1419810775052" title="API 分类列表 测试一下过长的菜单一下长长长长长长长长长长长长长">
+		<menu id="1411810775158" title="js界面组件">
+			<menu id="1421810775158" title="$.postIframe" path="/demos/jsapi/postiframe.jsp"/>
+		</menu>
+		<menu id="1411810775168" title="后台数据">
+			<menu id="1320810785158" title="服务器流量监控" path="/demos/sysfluxdemo.jsp"/>
+		</menu>
+	</menu>
+</module-cfg>

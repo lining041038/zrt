@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 组织机构类别标志 -->
+
+<root>
+	<item label="中文" value="zh_CN"/>
+	<item label="英文" value="en_US"/>
+</root>
+

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 页面类型 -->
+
+<root>
+	<item value="0" label="普通"/>
+	<item value="1" label="首页"/>
+</root>
+

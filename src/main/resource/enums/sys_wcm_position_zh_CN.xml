@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 页面类型 -->
+
+<root>
+	<item value="0" label="左"/>
+	<item value="1" label="中"/>
+	<item value="2" label="右"/>
+	<item value="3" label="下"/>
+</root>
+

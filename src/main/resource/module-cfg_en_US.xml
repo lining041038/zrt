@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module-cfg>
+	<menu id="1319810775039" title="System Management">
+		<menu id="1319810775040" title="系统参数管理">
+			<menu id="1319810775041" title="角色管理" path="/system/userAndRoleManage.jsp" />
+			<menu id="1319810775042" title="组织机构管理" path="/system/organizationManage.jsp" />
+			<menu id="1319810775142" title="system options" path="/system/sysoptsManage.jsp" />
+			<menu id="1329810775042" title="多单位统一领导管理" path="/system/multiOrgLeaderManage.jsp" />
+			<menu id="1319810775043" title="地图机构关系管理" path="/system/datamapunitManage.jsp" />
+			<menu id="1319810775443" title="系统数据迁移" path="/system/oldDataMigration.jsp" />
+			<menu id="1379810775443" title="Task调度台" path="/system/quartz/taskManageConsole.jsp" />
+			<menu id="2319810774978" title="自定义浮动表模板" path="/components/floatLineReportTemplates.jsp" />
+			<menu id="1319810774975" title="数据库分页增删改" path="/example/databasesplitpage.jsp" />
+			<menu id="1319810774977" title="多文件上传高级组件" path="/example/fileupload.jsp" target="_blank"/>
+			<menu id="1339810774977" title="多序列flash图表" path="/example/flashchartexample.jsp" />
+			<menu id="1319810774979" title="百度式搜索组件" path="/example/baidu.jsp" />
+			<menu id="1319810774989" title="导出word文档例子" path="/example/exportword.jsp" />
+		</menu>
+	</menu>
+	<menu id="1319810775052" title="Demo 演示">
+		<menu id="1319810775053" title="datagrid">
+			<menu id="1319810775054" title="datagrid" path="/demos/datagrid.jsp"/>
+			<menu id="1319810775154" title="datagrid_editable" path="/demos/datagrid_editable.jsp"/>
+		</menu>
+		<menu id="1319810775057" title="fileupload">
+			<menu id="1319810775055" title="fileupload" path="/demos/fileupload.jsp"/>
+		</menu>
+		<menu id="1319810775058" title="userselect">
+			<menu id="1319810775056" title="userselect" path="/demos/userselect.jsp"/>
+		</menu>
+		<menu id="1319810775158" title="selectByList">
+			<menu id="1319810775156" title="selectByList" path="/demos/listselectdemo.jsp"/>
+		</menu>
+		<menu id="1359810775158" title="表单验证">
+			<menu id="1351810775158" title="validate" path="/demos/validate.jsp"/>
+		</menu>
+		<menu id="1349810775158" title="图表组件">
+			<menu id="1341810775158" title="flashchart" path="/demos/flashchartexample.jsp"/>
+		</menu>
+		<menu id="1339810775158" title="数据地图组件">
+			<menu id="1331810775158" title="loadDataMap" path="/demos/datamap.jsp"/>
+		</menu>
+		<menu id="1369810775158" title="workflow component">
+			<menu id="1361810775158" title="workflow_datagrids" path="/demos/workflow_datagrids_demo.jsp"/>
+		</menu>
+		<menu id="1329810775158" title="完整功能界面组件">
+			<menu id="1320810775158" title="single_datagrid" path="/demos/single_datagrid.jsp"/>
+			<menu id="1321810775158" title="tree_datagrid" path="/demos/tree_datagrid.jsp"/>
+		</menu>
+		<menu id="1429810775258" title="完整功能">
+			<menu id="1420810775158" title="AMS组播直播发送端" path="/modules/amsmulticastlive.jsp"/>
+			<menu id="1420810775258" title="AMS组播直播观看端" path="/modules/amsmulticastlivereceiver.jsp" target="_blank"/>
+		</menu>
+	</menu>
+	<menu id="1419810775052" title="API 分类列表">
+		<menu id="1411810775158" title="js界面组件">
+		</menu>
+	</menu>
+</module-cfg>

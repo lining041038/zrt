@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<item value="INFO" label="信息"/>
+	<item value="WARN" label="警告"/>
+	<item value="ERROR" label="错误"/>
+	<item value="FATAL" label="严重"/>
+</root>
+

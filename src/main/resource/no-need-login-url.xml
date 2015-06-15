@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 无需登录即可访问配置，支持正常字符串结尾和正则两种 -->
+<urls>
+	<!-- 系统 -->
+	<url>/LoginAction.do</url>
+	<url>/SSOLoginAction.vot</url>
+	<url>/LoginAction.vot</url>
+	<url>/singleLogin.jsp</url>
+	<url>/getsystemenumdatas.vot</url>
+	<url>/hg/index_win8/login.jsp</url>
+	<url>/login-form.jsp</url>
+	<url>/system/register.jsp</url>
+	<url>/common/SystemController/getVerifycodeImage.vot</url>
+	<url>/common/getI18nStr.vot</url>
+	<url>/common/addRegisterUser.vot</url>
+	<url>/common/getanewsid.vot</url>
+	<url>/common/isLogon.vot</url>
+	<url>/common/AfeUtilController/addNewLatex.vot</url>
+	<url>/common/AfeUtilController/getLatexImgData.vot</url>
+	<url>/common/SystemParamsController/getModuleTitleById.vot</url>
+	<url>/common/getBatchI18nStr.vot</url>
+	<url>/upload/uploadfiles.vot</url>
+	<url>/getMenuInfo.vot</url>
+	<url>/[^/]+/gotoOnlinepaypage/.+</url>
+	<url>/[^/]+/notifypaycallback/.+</url>
+	<url>/[^/]+/returncallback/.+</url>
+	
+	<!-- 数据库升级 -->
+	<url>/components/updatedatabase.jsp</url>
+	<url>/common/DBController/testCallAnt.vot</url>
+	<!-- 单元测试 -->
+	<url>/test/common/TextCommonController/startSystemUnitTest.vot</url>
+	<url>/common/getSystemMode.vot</url>
+	
+	
+	<!-- wcm网站内容管理 -->
+	<url>/</url>
+	<url>/index.jsp</url>
+	<url>/article.jsp</url>
+	<url>/articlelist.jsp</url>
+	<url>/product.jsp</url>
+	<url>/peoplemsg.jsp</url>
+	<url>/productlist.jsp</url>
+	<url>/custompage.jsp</url>
+	<url>/search.jsp</url>
+	<url>/[^/]+/wcm/webpagedata/WebPageDataController/.+</url>
+	<url>/upload/UploadController/getSingleImageDataByFilegroupsid.vot</url>
+	<url>/upload/UploadController/getSingleImageData.vot</url>
+	<url>/upload/getUploadFilePosition.vot</url>
+	
+	<!-- 登录页面显示法律法规 -->
+	<url>/hg/getsinglelawinstitutioninfo.vot</url>
+	<url>/hg/lawaddclicktime.vot</url>
+	<url>/hg/queryLawInstitution.vot</url>
+	<url>/hg/LawStatisticsController/getAllOrderbyClickTime.vot</url>
+	<url>lawinstitutionQuery.jsp</url>
+	<url>/hg/login/law.jsp</url>
+	<url>/hg/LoginController/getLawOrderByClickTime.vot</url>
+	<url>/hg/LoginController/getSinglelawinstitutioninfologin.vot</url>
+	<url>/hg/login/printit.jsp</url>
+	
+	<!-- 登录页面显示公司制度  -->
+	<url>/hg/check/cil/getSingleInstitutioninfo.vot</url>	
+	<url>/hg/check/cil/addInstitutionclicktime.vot</url>
+	<url>/hg/check/cil/queryInstitutionLib.vot</url>
+	<url>companyInstitutionLibList.jsp</url>
+	<url>/hg/LoginController/getCompanyOrderByClickTime.vot</url>
+	<url>/hg/LoginController/getSinglecompanyinstitutioninfologin.vot</url>
+	<url>/hg/login/company.jsp</url>
+	
+	<!-- 登录显示合规速递 -->
+	<url>/hg/login/delivery.jsp</url>
+	<url>/hg/LoginController/getHgmhOrderByClickTime22.vot</url>
+	<url>/LoginController/getArticleForLogin.vot</url>
+	<url>/CmsPortalController/listCategoryWithArticles.vot</url>
+	<url>/cms/cmsPortal1.jsp</url>
+	<url>/CmsPortalController/queryArticleByCategory.vot</url>
+	<url>/CmsArticleController/getArticle.vot</url>
+	<url>/LoginController/getArticleForLogin.vot</url>
+	<url>/CmsArticleController/cmsPortal1clicktime.vot</url>
+	<url>/cms/cmsPortal1.jsp</url>
+	<url>/LoginController/gettiaomu33.vot</url>
+	
+	<!-- 页面显示总矩阵 -->
+	<url>/hg/matrix/matrix.jsp</url>
+	
+	<!-- 测试 -->
+	<url>/example/flashchartexample.jsp</url>
+	<url>/example/verifyimageexample.jsp</url>
+	
+	<!-- demo -->
+	<url>/[^/]+/demos/.+</url>
+</urls>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="localedeploy" default="default">
+	
+    <property name="db.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver" />
+    <property name="db.url" value="jdbc:sqlserver://localhost:1433;databaseName=databasetotest" />
+	<property name="db.totesturl" value="jdbc:sqlserver://localhost:1433;databaseName=master" />
+	<property name="db.userid" value="sa" />
+	<property name="db.password" value="sa" />
+	
+    <property name="webapp" value="../../../../webapp" />
+    <property name="zipwebapp" value="D:\deploy\webapp" />
+	<property name="zipwebappfile" value="D:\deploy\webapp2.zip" />
+	
+    <path id="mssql.classpath">
+        <fileset dir="../../lib">
+            <include name="*.jar"/>
+        </fileset>
+    </path>
+    <taskdef name="dbdeploy" classname="com.dbdeploy.AntTarget" classpathref="mssql.classpath"/>
+	<target name="default">
+		
+		<!--
+			<sql driver="${db.driver}" url="${db.totesturl}"  userid="${db.userid}" password="${db.password}" classpathref="mssql.classpath">
+				       <fileset file="dropTestDatabase.sql"></fileset>
+			</sql>
+			<sql driver="${db.driver}" url="${db.totesturl}"  userid="${db.userid}" password="${db.password}" classpathref="mssql.classpath">
+		       <fileset file="createTestDatabase.sql"></fileset>
+		    </sql>
+	        <sql driver="${db.driver}" url="${db.url}" userid="${db.userid}" password="${db.password}" classpathref="mssql.classpath" >
+	            <fileset file="createSchemaVersionTable.mssql.sql"/>
+	        </sql>
+			
+	    	<sql driver="${db.driver}" url="${db.url}"
+		         userid="${db.userid}" password="${db.password}" classpathref="mssql.classpath" >
+		        <fileset file="../../src/main/resource/bapdbdeploy/createSchemaVersionTable.mssql.sql"/>
+		     </sql>
+		     <dbdeploy driver="${db.driver}" url="${db.url}"
+		              userid="${db.userid}"
+		              password="${db.password}"
+		    		  changelogtablename="bapchangelog"
+		              dir="../../src/main/resource/bapdbdeploy"
+		        />
+		  	<dbdeploy driver="${db.driver}" url="${db.url}"  userid="${db.userid}" password="${db.password}" dir="../../src/main/resource/dbdeploy" />
+			<sql driver="${db.driver}" url="${db.totesturl}"  userid="${db.userid}" password="${db.password}" classpathref="mssql.classpath">
+		       <fileset file="dropTestDatabase.sql"></fileset>
+		    </sql>
+		 -->
+		<delete dir="${zipwebapp}" file="${zipwebappfile}"/>
+		<mkdir dir="${zipwebapp}"/>
+		<copy todir="${zipwebapp}">
+			<fileset dir="${webapp}">
+				<exclude name="WEB-INF/classes/deploy/build.xml"/>
+				<exclude name="WEB-INF/classes/deploy/localdeploy.xml"/>
+			</fileset>
+		</copy>
+		<zip destfile="${zipwebappfile}" basedir="${zipwebapp}" encoding="GBK"></zip>
+		<!-- 
+		<java dir="D:/workspace/Ssss/build/classes/com/smartdot/icm/common/webservices"
+				classname="com.smartdot.icm.common.webservices.DeployappPortTypeProxy"
+				classpath="D:/workspace/Ssss/build/classes" classpathref="webservice.classpath"
+				>
+		</java>
+		<ftp action="del" server="localhost" port="21" userid="admin" password="admin">
+            <fileset file="webapp.zip"/>
+        </ftp>
+		<ftp userid="admin" password="admin" server="localhost" port="21" action="put">
+			<fileset file="${zipwebappfile}"/>
+		</ftp>
+		<java dir="D:/workspace/Ssss/build/classes/com/smartdot/icm/common/webservices"
+			classname="com.smartdot.icm.common.webservices.DeployappSOAP11BindingStub"
+			classpath="D:/workspace/Ssss/build/classes" classpathref="webservice.classpath"
+			>
+		</java>-->
+	</target>
+</project>

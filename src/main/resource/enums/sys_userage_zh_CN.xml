@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 性别标识 -->
+
+<root>
+	<item value="0" label="0-5"/>
+	<item value="1" label="6-20"/>
+	<item value="2" label="21-30"/>
+</root>
+

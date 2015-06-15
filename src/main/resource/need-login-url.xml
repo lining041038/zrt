@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 必须登录才可访问配置，支持正常字符串结尾和正则两种 注意需要将system-opts中的use_no_need_login=true配置项设置为false
+即use_no_need_login=false
+ -->
+<urls>
+	<url>/demos/multiple_datagridsdemo.jsp</url>
+</urls>

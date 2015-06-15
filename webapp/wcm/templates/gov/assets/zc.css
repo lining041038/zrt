@@ -1,0 +1,42 @@
+.yj_clear{clear:both;}
+.yj_h30{clear:both; height:30px;}
+.news-pane{width:950px;}
+.yj_banner{width:400px; float:left; padding-top:10px;}
+.yj_banner dl{width:400px; height:300px; position:relative;}
+.yj_banner dl dt img{width:400px; height:300px;}
+.yj_banner dl dd{width:400px; height:45px; line-height:45px; position:absolute; left:0; bottom:0; background:#676464; color:#fff;}
+.yj_banner dl dd p{padding-left:14px; font-size:14px; background:url(images/yj_hsbg.png) repeat;}
+.yj_detaillist{width:550px; float:right;}
+.yj_detaillist .pubListBox01{margin-left:30px;}
+.yj_detaillist .pubListBox01 ul.list01 li{ clear:both; width:420px;}
+.yj_detaillist .pubListBox01 ul.list01 li a{display:inline; float:left;}
+.yj_detaillist .pubListBox01 ul.list01 li span{display:inline; float:right;}
+
+.yj_main{width:950px;}
+.yj_left_listsubtit{ position:absolute; left:140px;height:43px;line-height:43px;}
+.yj_main .pubListBox01 ul.list01 li{ clear:both; width:850px;}
+.yj_main .pubListBox01 ul.list01 li a{display:inline; float:left;}
+.yj_main .pubListBox01 ul.list01 li span{display:inline; float:right;}
+.yj_left_listsubtit a{margin:0 15px; font-size:16px;}
+.yj_left_listsubtit a:hover{color:#bc2222;}
+.yj_left_list02 .yj_left_listsubtit a{margin:0 15px; font-size:14px;}
+
+
+.flexslider{margin:0 auto;position:relative;width:400px;height:300px;overflow:hidden;zoom:1; }
+.flexslider .slides li{width:400px;height:300px;overflow:hidden;float:left;position:relative;}
+.flexslider .slides li p{ font-size:14px; height:45px; line-height:45px; overflow:hidden;position:absolute;bottom:0;left:10px;width:380px;z-index:2;color:#ffffff;font-size:14px;}
+.flexslider .slides li p a{color:#ffffff;}
+.flexslider .slides li .titBg{background:#000; height:45px;position:absolute;bottom:0;left:0;width:400px;z-index:1;filter: alpha(opacity=70);-moz-opacity: 0.7;-khtml-opacity: 0.7;opacity: 0.7;}
+.flex-viewport{max-height:2000px;-webkit-transition:all 1s ease;-moz-transition:all 1s ease;transition:all 1s ease;}
+.flexslider .slides{zoom:1;}
+.flexslider .slides li img{ width:400px;height:300px;display:block;}
+
+.flex-control-nav{display:none;}
+.flex-control-paging li a{background-position:-35px 0;display:block;height:16px;overflow:hidden;text-indent:-99em;width:12px;cursor:pointer;margin:0 5px 0 0;}
+
+.flex-direction-nav a{width:17px;height:17px;line-height:99em;overflow:hidden;margin:0;display:block;position:absolute;bottom:20px;z-index:10;cursor:pointer;}
+.flex-direction-nav li a.flex-prev{ background:url(images/news_btn_f1.png) no-repeat;  height:38px; width:38px; left:8px; top:110px;}
+.flex-direction-nav li a.flex-next{ background:url(images/news_btn_f2.png) no-repeat; height:38px; width:38px; right:8px; top:110px;}
+
+*html .flex-direction-nav li a.flex-prev{background-color:transparent;background-image:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://www.gov.cn/2014xinban/static/images/news_btn_f1.png", sizingMethod="crop");}
+*html .flex-direction-nav li a.flex-next{background-color:transparent;background-image:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://www.gov.cn/2014xinban/static/images/news_btn_f2.png", sizingMethod="crop");}

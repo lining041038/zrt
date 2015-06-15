@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 支付与否标识 -->
+
+<root>
+	<item value="0" label="未支付"/>
+	<item value="1" label="已支付"/>
+</root>
+

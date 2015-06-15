@@ -1,0 +1,1 @@
+alter table WCM_PRODUCT add productprice numeric(19,5);

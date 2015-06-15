@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 性别标识 -->
+
+<root>
+	<item value="0" label="男"/>
+	<item value="1" label="女"/>
+</root>
+

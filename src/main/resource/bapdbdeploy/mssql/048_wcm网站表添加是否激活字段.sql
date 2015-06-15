@@ -1,0 +1,1 @@
+alter table WCM_SITE add activated varchar(1);

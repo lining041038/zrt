@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="update_antelope" default="update_antelope">
+	<path id="svnant.classpath">
+	      <fileset dir="../../lib">
+           <include name="*.jar"/>
+       </fileset>
+   </path>
+	<typedef resource="org/tigris/subversion/svnant/svnantlib.xml" classpathref="svnant.classpath" />
+	  <condition property="fileIsExists">  
+	  		<available type="dir" file="d:/antelopetemp"/>
+	  </condition>
+	
+	<target name="cleanup_antelopetemp" if="fileIsExists">
+		<svnSetting id="svnparams_antelope" username="lining" password="796C29DE" javahl="false" svnkit="true"/>
+		<svn refid="svnparams_antelope">
+			<cleanup dir="d:/antelopetemp"/>
+		</svn>
+	</target>
+	
+	<target name="update_antelope">
+		<antcall target="cleanup_antelopetemp"></antcall>
+		<svnSetting id="svnparams_antelope" username="lining" password="796C29DE" javahl="false" svnkit="true"/>
+		<svn refid="svnparams_antelope">
+			<checkout url="http://115.47.18.171:85/svn/antelope/antelope" revision="HEAD" destPath="d:/antelopetemp"/>
+		</svn>
+		<echo>checkout bap complete</echo>
+		<copy todir="../../../../" verbose="true" overwrite="true">
+			<fileset dir="d:/antelopetemp">
+				<exclude name="src/main/resource/module-cfg_zh_CN.xml"/>
+				<exclude name="src/main/resource/module-cfg_en_US.xml"/>
+				<exclude name="src/main/resource/workflow-cfg.xml"/>
+				<exclude name="src/main/resource/need-login-url.xml"/>
+				<exclude name="src/main/resource/log4j.properties"/>
+				<exclude name="src/main/resource/no-need-login-url.xml"/>
+				<exclude name="src/main/resource/enums/sys_unittype_zh_CN.xml"/>
+				<exclude name="src/main/resource/system-opts.properties"/>
+				<exclude name="src/main/resource/deploy/localdeploy.xml"/>
+				<exclude name="src/main/resource/persistence.xml"/>
+				
+				<exclude name="src/test/resource/test-cfg.properties"/>
+				
+				<exclude name="src/main/resource/i18n/messages_project_en_US.properties"/>
+				<exclude name="src/main/resource/i18n/messages_project_zh_CN.properties"/>
+				
+				<exclude name="src/main/resource/enums/sys_language_en_US.xml"/>
+				<exclude name="src/main/resource/enums/sys_language_zh_CN.xml"/>
+				<exclude name="webapp/controls/js/jquery-controls-1.0.js"/>
+				<exclude name="webapp/js/jquery-ui.js"/>
+				<exclude name="webapp/js/jquery.ztree-2.6.js"/>
+				<exclude name="webapp/js/jquery.layout-latest.js"/>
+				
+				<exclude name="webapp/portal.jsp"/>
+				<exclude name="webapp/WEB-INF/web.xml"/>
+				<exclude name="webapp/WEB-INF/services/wsconfig/META-INF/services.xml"/>
+				<exclude name="webapp/WEB-INF/springmvc-servlet.xml"/>
+				
+				<exclude name=".classpath"/>
+				<exclude name=".project"/>
+				<exclude name=".settings/org.eclipse.core.resources.prefs"/>
+			</fileset>
+		</copy>
+	</target>
+	
+</project>

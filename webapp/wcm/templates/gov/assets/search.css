@@ -1,0 +1,60 @@
+.news-pane .gov-left{width:750px;margin:0 0 0 180px;padding-bottom:40px; _width:744px;}
+.searchbox{position:relative; margin:30px 0 0 200px; clear:both; *zoom:1 ;_z-index:9;_margin:30px 0 0 30px;}
+.searchbox .sim-select{margin-right:4px;width:200px;position:absolute;margin:0 0 20px -150px;}
+.searchbox .sim-select h3{width:136px;}
+.searchbox .round{border:1px solid #caced6; width:400px; position:relative; padding-right:2px; float:left;}
+.searchbox .input-key{height:24px; *height:22px; line-height:24px; padding-left:7px; color:#727272; -webkit-appearance: none; background:#fff;border:0;outline:0; width:395px;font-size: 13px;}
+.searchbox .del-key{position:absolute; width:17px; height:16px; background:url(images/del-key.jpg) no-repeat; overflow:hidden; text-indent:-9999px; right:1px; top:4px; cursor:pointer}
+.searchbox .sub_button{padding-left:4px; float:left}
+.searchbox .ui-btn {font-size: 14px;height: 26px;line-height: 26px;padding: 0;width: 75px;}
+.ui-btn {background: url("images/btn_bg.png") repeat-x scroll 0 0 rgba(0, 0, 0, 0); border: 0 none;box-shadow: 0 2px 2px rgba(187, 187, 187, 0.8);color: #FFFFFF;cursor: pointer;height: 23px;line-height: 23px;padding: 0 19px;}
+.searchbox .notice{margin-left:6px; line-height:24px; display:inline-block}
+.searchbox .notice a{color:#666;}
+.searchbox .helplink{line-height:14px;}
+.searchbox-bottom{margin:20px 0 0 54px;}
+
+
+.result{min-height:500px;}
+.result ul{ clear:both; overflow:hidden;}
+.res-list{padding:22px 34px 0 54px;_padding:22px 34px 0 30px;}
+.res-title{line-height:22px; font-size:18px; font-family:\9ED1\4F53; font-weight:normal; color:#0a0a0a}
+.res-title a{color:#004986;font-size:15px;font-family:"宋体"}
+.res-list em{color:#cc0000}
+.res-sub{padding-top:5px; line-height:140%; font-size:13px; color:#262626;}
+.res-other{padding-top:4px; line-height:20px; font-size:12px; color:#666666}
+.res-other .txt{padding-right:40px;}
+
+.res-sub-title{line-height:22px; font-size:18px; font-weight:normal; color:#0a0a0a}
+.res-sub-title a{color:#004986;font-size:15px;font-family:"宋体"}
+.res-sub-sub{padding-top:5px; line-height:140%; font-size:13px; color:#262626;}
+.res-sub-other{padding-top:4px; line-height:20px; font-size:12px; color:#666666}
+.res-sub-other .txt{padding-right:40px;}
+
+
+.gov-right{width:212px; padding-bottom:100px; border:1px #f0f0f0 solid;background:#fbfbfb;position:absolute;top:250px;left:930px;_width:205px;}
+.search-nav{padding:8px 39px 0 27px; }
+.search-nav-sort{margin-top:48px;}
+.search-nav-sort h2{height:21px; overflow:hidden; font-size:16px; color:#646464 }
+.search-nav-sort .cur a{cursor:default}
+.time-sort h2{color:#646464; padding-bottom:10px; font-size:16px;}
+
+.sort-list li{background:url(images/sort_bg.jpg) no-repeat 0 -38px; width:150px;margin: 0 0 0 0px;}
+.sort-list li.cur{background:url(images/sort_bg.jpg) no-repeat 0 0; border-bottom:0; zoom:1}
+.sort-list a{display:block; font-size:16px; line-height:35px; color:#333; padding-left:32px; text-decoration:none}
+.sort-list li.cur a{color:#fdfcfc; font-size:16px; line-height:35px;font-family:宋体}
+.sort-list li.fixed-date{background:none; padding:6px 0;}
+.sort-list li.fixed-date p{padding:4px 0}
+.sort-list li.fixed-date p.btn{text-align:center;}
+
+.time-sort h2{color:#646464; padding-bottom:10px; font-size:16px;}
+.time-sort{padding: 0 0 0 20px;}
+
+#fromDate,#toDate{width:150px;}
+
+.sort-list li{cursor: pointer;}
+
+h1,h2,h3,h4,h5,h6,input,textarea,select,address,caption,cite,code,dfn,em,i,b,strong,small,th,var,abbr{font-size:100%;font-style:normal}
+q:before,q:after{content:''}
+ins,s,u,del{text-decoration:none}
+td{font-size:9pt;line-height:18px}
+input{padding-top:0;padding-bottom:0}em,cite{font-style:normal}

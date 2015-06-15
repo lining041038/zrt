@@ -1,0 +1,40 @@
+.news-pane{width:1000px;}
+.news-colum{ width:935px; margin-left:43px;}
+.kuandu{width:636px;float:left;}
+.news-left{width:612px;background:#f9f9f9; margin-left:12px; border-left:1px solid #e7e7e7; border-right:1px solid #e7e7e7; overflow:hidden; zoom:1;}
+.news-right{width:255px;float:right;}
+
+.wxzls_yx .tabg a{ display:block; padding-left:30px; background:url(images/wxzls_img1.jpg) no-repeat 0 center;  }
+.tabmenu li span.tabg{font-size:18px;}
+.tabmenu{background:url("images/public_titbg_t4.jpg") repeat-x;height:44px;font-weight:normal;position:relative; width:615px; margin-left:12px;}
+.tabmenu ul{width:300px;float:left;}
+.tabmenu li{float:left;width:auto;margin:0 16px;}
+.tabmenu li.selected{margin:0;}
+.tabmenu li span.tabg,.tabmenu li span.bg01,.tabmenu li span.bg02{display:block;height:44px;line-height:44px;float:left;}
+.tabmenu li.selected span.tabg{width:auto;background:url(images/public_titbg_t3.jpg) repeat-x;padding:0 8px;font-size:18px;color:#ffffff;}
+.tabmenu li.selected span.tabg a{color:#ffffff;}
+.tabmenu li.selected span.bg01{width:20px;background:url(images/public_titbg_t1.jpg) no-repeat;}
+.tabmenu li.selected span.bg02{width:20px;background:url(images/public_titbg_t2.jpg) no-repeat;}
+
+.tupian{ width:636px; height:255px; float:left; background:url(images/wxzls87.jpg) no-repeat 0 0; }
+.biaodan{float:left;padding-left:50px; padding-top:45px; font-family:Microsoft Yahei; font-size:14px;}
+form .xiaju{margin-bottom:20px;height:30px;margin-left:0px;}
+form input{height:23px;border: 1px solid #d2d2d2;background:white;vertical-align:middle; line-height:23px; padding:1px 0 1px 3px;}
+form .inputk{width:260px;}
+form .inputk2{width:115px;}
+form .inputc{width:430px;}
+form .inputc2{height:70px;color:#333;width: 399px;font-size:14px;padding: 12px 17px;border: 0;border: 1px solid #d2d2d2;}
+form .bianz{float:left;width:105px;margin-left:0px; line-height:20px;}
+.bianz span{ font-size:18px; padding-top:5px; padding-right:7px; float:left;}
+form .biany{float:left;margin:0;}
+form span{color:#ca2d1e;}
+form .xiaju2{margin-top:20px;height:125px;margin-left:0px;}
+.xiaju img{margin-left:10px;float:left;}
+.gao{padding-top:10px;}
+.xiaju{ height:auto;}
+.xiaju a{font-size:12px;margin-left:15px;line-height:60px;}
+.xiaju3 .sub{width:90px;height:30px;background:url(images/wxzls7.jpg);border:0px;font-size:18px;color:white;float:left;margin-left:90px;margin-right:20px;}
+.xiaju3 .res{width:90px;height:30px;background:url(images/wxzls8.jpg);border:0px;font-size:18px;color:white;float:left;}
+.xiaju3{margin-top:10px;float:left;}
+.xiaju3 input { cursor:pointer;}
+.left{width:auto;}

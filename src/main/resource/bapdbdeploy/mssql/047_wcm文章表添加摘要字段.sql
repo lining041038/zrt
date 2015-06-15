@@ -1,0 +1,1 @@
+alter table WCM_ARTICLE add digest varchar(1000);
